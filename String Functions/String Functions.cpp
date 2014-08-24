@@ -1,3 +1,11 @@
+/*******************************************************************
+* Copyright (c) 2012, Michael Hollister                            *
+*                                                                  *
+* This source code is subject to the terms of The MIT License.     *
+* If a copy of The MIT License was not distributed with this file, *
+* you can obtain one at http://opensource.org/licenses/MIT.        *
+*******************************************************************/
+
 // String Functions.cpp : Defines the exported functions for the DLL application.
 //
 // Includes
@@ -13,8 +21,6 @@
 #include <boost\lexical_cast.hpp>
 #include <boost\algorithm\string.hpp>
 #include <boost\regex.hpp> // Using boost regex as of the moment it can compile regex strings that tr1 version can't.
-
-
 
 // below VERSION 4??
 // look into regex groups...

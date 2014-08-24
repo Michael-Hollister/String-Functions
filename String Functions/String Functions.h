@@ -1,3 +1,11 @@
+/*******************************************************************
+* Copyright (c) 2012, Michael Hollister                            *
+*                                                                  *
+* This source code is subject to the terms of The MIT License.     *
+* If a copy of The MIT License was not distributed with this file, *
+* you can obtain one at http://opensource.org/licenses/MIT.        *
+*******************************************************************/
+
 #pragma once
 #ifndef STRING_FUNCTIONS_H
 #define STRING_FUNCTIONS_H
@@ -13,6 +21,7 @@
 #include <map>
 #include <boost\lexical_cast.hpp>
 #include <boost\regex.hpp> // Using boost regex as of the moment it can compile regex strings that tr1 version can't.
+
 
 //Function prototypes
 

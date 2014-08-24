@@ -1,3 +1,11 @@
+/*******************************************************************
+* Copyright (c) 2012, Michael Hollister                            *
+*                                                                  *
+* This source code is subject to the terms of The MIT License.     *
+* If a copy of The MIT License was not distributed with this file, *
+* you can obtain one at http://opensource.org/licenses/MIT.        *
+*******************************************************************/
+
 // stdafx.h : include file for standard system include files,
 // or project specific include files that are used frequently, but
 // are changed infrequently
