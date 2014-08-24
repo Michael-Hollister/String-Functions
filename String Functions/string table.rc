@@ -1,0 +1,54 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+	
+	// SF Is functions
+	IDRES_STR1 "SF Contains[%DSS%Contains%Str As String, SubStr As String"
+	IDRES_STR2 "SF Is_AlphaNum[%DSL%Is_AlNum%Str As String, Index As Integer"
+	IDRES_STR3 "SF Is_Alpha[%DSL%Is_Alpha%Str As String, Index As Integer"
+	IDRES_STR4 "SF Is_Digit[%DSL%Is_Digit%Str As String, Index As Integer"
+	IDRES_STR5 "SF Is_Lower[%DSL%Is_Lower%Str As String, Index As Integer"
+	IDRES_STR6 "SF Is_Punct[%DSL%Is_Punct%Str As String, Index As Integer"
+	IDRES_STR7 "SF Is_Space[%DSL%Is_Space%Str As String, Index As Integer"
+	IDRES_STR8 "SF Is_Upper[%DSL%Is_Upper%Str As String, Index As Integer"
+	IDRES_STR9 "SF Is_HexDigit[%DSL%Is_XDigit%Str As String, Index As Integer"
+
+	// SF Misc functions
+	IDRES_STR10 "SF BoolToStr[%SD%Bool_To_Str%Value As Boolean"
+	IDRES_STR11 "SF Mixedcase[%SSD%Mixedcase%Str As String, Mode As Boolean"
+	IDRES_STR12 "SF StrToBool[%DS%Str_To_Bool%Str As String"
+	IDRES_STR13 "SF EditDistance[%LSS%String_Distance%StrA As String, StrB As String"
+	IDRES_STR14 "SF ToCharArray%HS%ToCharArray%Arr As Array, Str As String"
+	IDRES_STR15 "SF SplitStrToArray%HSS%?SplitStrToArray@@YAXPAKPBD1@Z%[Arr As Array, Str As Strings, Delimiter As String] [Arr As Array, Str As Strings, Delimiter As String, Mode As Boolean]"
+	IDRES_STR16 "SF SplitStrToArray%HSSD%?SplitStrToArray@@YAXPAKPBD1K@Z%[Arr As Array, Str As Strings, Delimiter As String] [Arr As Array, Str As Strings, Delimiter As String, Mode As Boolean]"
+
+	// SF Path functions
+	IDRES_STR17 "SF Path_GetFileName[%SS%?Path_GetFileName@@YAPADPBD0@Z%[Path As String] [Path As String, Value As Boolean]"
+	IDRES_STR18 "SF Path_GetFileName[%SSD%?Path_GetFileName@@YAPADPBD0K@Z%[Path As String] [Path As String, Value As Boolean]"
+	IDRES_STR19 "SF Path_ChangeFileExtension[%SSS%Path_ChangeFileExtension%Path As String, Extension As String"
+	IDRES_STR20 "SF Path_GetFileExtension[%SS%Path_GetFileExtension%Path As String"
+	IDRES_STR21 "SF Path_GetParent[%SS%Path_GetParent%Path As String"
+	IDRES_STR22 "SF Path_GetParentName[%SS%Path_GetParentName%Path As String"
+	IDRES_STR23 "SF Path_GetPathRoot[%SS%Path_GetPathRoot%Path As String"
+	IDRES_STR24 "SF Path_HasExtension[%DS%Path_HasExtension%Path As String"
+	IDRES_STR25 "SF Path_Valid[%LS%Path_Valid%Path As String" 
+	
+	// SF RegEx Functions
+	IDRES_STR26 "SF RegEx_GetMatchCount[%0%RegEx_GetMatchCount%No Parameters"
+	IDRES_STR27 "SF RegEx_GetMatchPosition[%LL%RegEx_GetMatchPosition%Index As Integer"
+	IDRES_STR28 "SF RegEx_GetMatchStr[%SL%RegEx_GetMatchStr%Index As Integer"
+	IDRES_STR29 "SF RegEx_IsMatch[%DSS%RegEx_IsMatch%Str As String, Pattern As String"
+	IDRES_STR30 "SF RegEx_IsPartialMatch[%DSS%RegEx_IsPartialMatch%Str As String, Pattern As String"
+	IDRES_STR31 "SF RegEx_Match[%LSS%RegEx_Match%Str As String, Pattern As String"
+	IDRES_STR32 "SF RegEx_Replace[%SSSS%RegEx_Replace%Str As String, Pattern As String, Formatter As String"
+
+END
+

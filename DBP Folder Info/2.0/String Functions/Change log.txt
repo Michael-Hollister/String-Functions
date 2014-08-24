@@ -1,0 +1,42 @@
+-------------------------------------------
+------- String Functions Change Log -------
+-------------------------------------------
+
+*******************************************
+
+--------------------------------------------------
+Version 2.0
+1/24/2012
+
+-----Changes-----
+All "SF Path" functions check for invalid characters and check to make sure it's less the maximum path length.
+Cleaned up and optimized code.
+Slightly changed the error return values.  Check the help file for new error codes.
+Changed function name "SF Path_GetFileFolder" to "SF Path_GetParent".
+Changed function name "SF Path_GetFileFolderName" to "SF Path_GetParentName".
+Made some changes in help documentation.
+Added compatibility for path functions to work with strings that have backslash characters. "/"
+
+-----Bug Fixes-----
+Fixed memory leaks in "SF Path" functions.
+Fixed some random crashes.
+
+-----New Features-----
+
+Added 4 new functions
+  * SF Path_GetPathRoot == Gets the root folder of the specified path.
+  * SF Path_ChangeFileExtension == Changes the extension of the specified path.
+  * SF Path_HasExtension == Checks to see if the path has a file extension.
+  * SF Path_Valid == Checks to see if the path has invalid path/file characters.  Also checks if the path is less than the maximum path length.
+
+
+
+--------------------------------------------------
+
+Version 1.0
+9/20/2011
+
+Public Release.
+
+--------------------------------------------------
+

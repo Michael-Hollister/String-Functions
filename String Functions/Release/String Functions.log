@@ -1,0 +1,131 @@
+﻿Build started 5/2/2012 8:24:13 PM.
+     1>Project "C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\String Functions\String Functions.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\String Functions.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\boost\boost_1_49_0" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D STRINGFUNCTIONS_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\String Functions.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "String Functions.cpp"
+         String Functions.cpp
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(106): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(107): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(108): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(109): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(110): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(111): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(112): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(113): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(114): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(115): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(116): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(117): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(118): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(119): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(120): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(121): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(122): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(123): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(124): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(125): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(126): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(127): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(137): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(187): warning C4805: '!=' : unsafe mix of type 'int' and type 'bool' in operation
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\String Functions.h(224): warning C4018: '>' : signed/unsigned mismatch
+     1>String Functions.cpp(292): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(315): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(350): warning C4482: nonstandard extension used: enum 'DBPro::ArrayType' used in qualified name
+     1>String Functions.cpp(384): warning C4018: '>=' : signed/unsigned mismatch
+     1>String Functions.cpp(392): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(438): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(442): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(445): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(449): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(451): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(475): warning C4482: nonstandard extension used: enum 'DBPro::ArrayType' used in qualified name
+     1>String Functions.cpp(479): warning C4018: '<' : signed/unsigned mismatch
+     1>String Functions.cpp(485): warning C4018: '>' : signed/unsigned mismatch
+     1>String Functions.cpp(729): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(730): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(731): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(732): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(733): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(734): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(735): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(736): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(737): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(738): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(739): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(740): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(741): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(742): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(743): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(744): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(745): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(746): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(747): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(748): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(749): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(824): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(825): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(826): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(827): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(828): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(829): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(830): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(831): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(832): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(833): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(834): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(835): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(836): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(837): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(838): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(839): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(840): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(841): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(842): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(843): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(844): warning C4482: nonstandard extension used: enum 'ReservedPathNames' used in qualified name
+     1>String Functions.cpp(863): warning C4018: '>=' : signed/unsigned mismatch
+     1>String Functions.cpp(876): warning C4018: '>=' : signed/unsigned mismatch
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\Release\String Functions.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\boost\boost_1_49_0\bin.v2\libs\regex\build\msvc-10.0\release\link-static\threading-multi" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\String Functions.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\Release\String Functions.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\Release\String Functions.lib" /MACHINE:X86 /DLL "Release\string table.res"
+         Release\dllmain.obj
+         "Release\Error Handler.obj"
+         Release\Standard.obj
+         Release\stdafx.obj
+         "Release\String Functions.obj"
+            Creating library C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\Release\String Functions.lib and object C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\Release\String Functions.exp
+         Generating code
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(999): warning C4715: 'RegEx_Match' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(424): warning C4715: 'Str_To_Bool' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(165): warning C4715: 'Is_XDigit' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(152): warning C4715: 'Is_Upper' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(139): warning C4715: 'Is_Space' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(126): warning C4715: 'Is_Punct' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(113): warning C4715: 'Is_Lower' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(100): warning C4715: 'Is_Digit' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(87): warning C4715: 'Is_AlNum' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(74): warning C4715: 'Is_Alpha' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(707): warning C4715: 'Path_HasExtension' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(691): warning C4715: 'Path_GetPathRoot' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(669): warning C4715: 'Path_GetParentName' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(640): warning C4715: 'Path_GetParent' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(618): warning C4715: 'Path_GetFileExtension' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(595): warning C4715: 'Path_ChangeFileExtension' : not all control paths return a value
+     1>c:\users\owner\documents\visual studio 2010\projects\c++\string functions\string functions\string functions.cpp(534): warning C4715: 'Path_GetFileName' : not all control paths return a value
+         Finished generating code
+         String Functions.vcxproj -> C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\Release\String Functions.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\Release\String Functions.dll;#2" /manifest "Release\String Functions.dll.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\String Functions.unsuccessfulbuild".
+         Touching "Release\String Functions.lastbuildstate".
+     1>Done Building Project "C:\Users\Owner\Documents\Visual Studio 2010\Projects\C++\String Functions\String Functions\String Functions.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.58

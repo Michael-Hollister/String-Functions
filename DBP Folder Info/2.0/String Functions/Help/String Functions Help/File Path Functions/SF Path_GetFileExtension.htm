@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>String Functions Documentation</title>
+    </head>
+
+    <body background="..\..\gfx\dbpro_bg.jpg">
+        <!-- Page Header -->
+        <center><table width="340" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+	        <td><img src="..\..\gfx\dbph_head_1.jpg" width="102" height="51"></td>
+	        <td><a href="..\..\main.htm"><img src="..\..\gfx\dbph_head_2.jpg" width="47" height="51" border="0"></a></td>
+	        <td><a href="..\..\commands.htm"><img src="..\..\gfx\dbph_head_3.jpg" width="50" height="51" border="0"></a></td>
+	        <td><a href="..\..\examples.htm"><img src="..\..\gfx\dbph_head_4.jpg" width="47" height="51" border="0"></a></td>
+	        <td><a href="..\..\documents.htm"><img src="..\..\gfx\dbph_head_5.jpg" width="46" height="51" border="0"></a></td>
+	        <td><a href="..\..\index.htm"><img src="..\..\gfx\dbph_head_6.jpg" width="56" height="51" border="0"></a></td>
+        </tr>
+        </table></center>
+        <font face="Verdana">
+
+        <!-- Function Head -->
+        <font face="Verdana" size="5">
+        <b>
+        SF Path_GetFileExtension
+        </b>
+        <font face="Verdana" size="2">
+        <p>
+        Get's the path's file extension.
+        </p>
+        </font>
+
+
+        <!-- Synopsis -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font color="#ffffff" size="3"><b>&nbsp;
+        Syntax
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="2">
+        <pre>
+Return String = SF Path_GetFileExtension( Path String )
+        </pre>
+        </font>
+
+
+        <!-- Parameters -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font color="#ffffff" size="3"><b>&nbsp;
+        Parameters
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="2">
+        <pre>
+Path String 
+        </pre>
+        <blockquote>
+The path string to check.
+        </blockquote>
+        </font>
+        <br />
+
+
+        <!-- Returns -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font color="#ffffff" size="3"><b>&nbsp;
+        Returns
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="2">
+        <p>
+        Returns the file extension.<br />
+        <a href="..\Error%20Codes.htm">Error Codes</a>: -1 (Null string), -3 (Invalid path characters), -4 (Over maximum path), -5 (Unknown string)
+        </p>
+        </font>
+
+
+        <!-- Description -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font color="#ffffff" size="3"><b>&nbsp;
+        Description
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="2">
+        <p>
+        Get's the path's file extension.
+        </p>
+        </font>
+
+
+        <!-- Examples -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font color="#ffffff" size="3"><b>&nbsp;
+        Example Code
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="3">
+        <pre>
+String$ = "C:\Documents\Textfile.txt"
+Ext$ = SF Path_GetFileExtension(String$)
+
+Print "String evaluated = " + String$
+Print "File extension is " + Ext$
+Wait Key
+        </pre>
+        </font>
+
+
+        <!-- See Also -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font color="#ffffff" size="3"><b>&nbsp;
+        See also
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="2">
+        <p>
+        <a href="..\String%20Functions%20Index.htm">String Functions Index</a><br />
+        <a href="..\..\main.htm">Main Menu</a><br />
+        </p>
+        </font>
+        <br />
+
+
+        </font>
+
+        <br />
+        <!-- Page Footer -->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+	        <td align="center"><img src="..\..\gfx\dbph_foot_1.jpg" width="340" height="38"></td>
+        </tr>
+        </table>
+    </body>
+</html>
+
+

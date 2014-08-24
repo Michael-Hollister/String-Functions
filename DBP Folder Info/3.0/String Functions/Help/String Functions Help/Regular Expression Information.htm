@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>String Functions Documentation</title>
+    </head>
+
+    <body background="..\gfx\dbpro_bg.jpg">
+        <!-- Page Header -->
+        <center><table width="340" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+	        <!-- Note: Will not the "alt" attribute yet, (Since its also a tooltip as it should not be...) -->
+            <td><img src="..\gfx\dbph_head_1.jpg" width="102" height="51"></td>
+	        <td><a href="..\main.htm"><img src="..\gfx\dbph_head_2.jpg" width="47" height="51" border="0"></a></td>
+	        <td><a href="..\commands.htm"><img src="..\gfx\dbph_head_3.jpg" width="50" height="51" border="0"></a></td>
+	        <td><a href="..\examples.htm"><img src="..\gfx\dbph_head_4.jpg" width="47" height="51" border="0"></a></td>
+	        <td><a href="..\documents.htm"><img src="..\gfx\dbph_head_5.jpg" width="46" height="51" border="0"></a></td>
+	        <td><a href="..\index.htm"><img src="..\gfx\dbph_head_6.jpg" width="56" height="51" border="0"></a></td>
+        </tr>
+        </table></center>
+
+        
+        <!-- Header information -->
+        <font face="Verdana" size="5">
+        <b>
+        Regular Expression Information
+        </b>
+        <font face="Verdana" size="2">
+        <p>
+        This document lists the regular expression syntax used by this library.  The syntax validation for the expressions uses Perl expression syntax.
+        </p>
+        </font>
+
+        <!-- Syntax -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font face="Verdana" color="#ffffff" size="3"><b>&nbsp;
+        Syntax
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="2">
+        <p>
+        Credit goes to J. Korpela for the following documentation.  His website containing great information on the Perl language can be found at "http://www.cs.tut.fi/~jkorpela/perl/".<br />
+        <br />
+        The information presented here is from the following web page "http://www.cs.tut.fi/~jkorpela/perl/regexp.html".  Parts of the web page have been modified or removed to have proper formatting in the IDE's web browser.<br />
+        </p>
+
+        <!-- Divider bar-->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font face="Verdana" color="#ffffff" size="3"><b>&nbsp;
+        
+        </b></font></td></tr>
+        </table>
+
+        <!------------------------------->
+        <!-- Perl expressions web page -->
+        <!------------------------------->
+        <H2>Regular expressions in Perl </H2>
+<P>This document presents a tabular <STRONG>summary</STRONG> of the regular expression (regexp) 
+syntax in Perl, then illustrates it with a 
+collection of annotated <STRONG><A 
+href="#ex">examples</A></STRONG>.</P>
+<TABLE border=0 cellSpacing=15 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <H3>Metacharacters</H3>
+      <TABLE border=1 cellSpacing=0 cellPadding=4>
+        <TBODY>
+        <TR>
+          <TH>char</TH>
+          <TH>meaning</TH></TR>
+        <TR>
+          <TH><BIG><CODE>^</CODE></BIG></TH>
+          <TD>beginning of string</TD></TR>
+        <TR>
+          <TH><BIG><CODE>$</CODE></BIG></TH>
+          <TD>end of string</TD></TR>
+        <TR>
+          <TH><BIG><CODE>.</CODE></BIG></TH>
+          <TD>any character except newline</TD></TR>
+        <TR>
+          <TH><BIG><CODE>*</CODE></BIG></TH>
+          <TD>match 0 or more times</TD></TR>
+        <TR>
+          <TH><BIG><CODE>+</CODE></BIG></TH>
+          <TD>match 1 or more times</TD></TR>
+        <TR>
+          <TH><BIG><CODE>?</CODE></BIG></TH>
+          <TD>match 0 or 1 times; <EM>or</EM>: shortest match</TD></TR>
+        <TR>
+          <TH><BIG><CODE>|</CODE></BIG></TH>
+          <TD>alternative</TD></TR>
+        <TR>
+          <TH><BIG><CODE>( )</CODE></BIG></TH>
+          <TD>grouping; “storing”</TD></TR>
+        <TR>
+          <TH><BIG><CODE>[ ]</CODE></BIG></TH>
+          <TD>set of characters</TD></TR>
+        <TR>
+          <TH><BIG><CODE>{ }</CODE></BIG></TH>
+          <TD>repetition modifier</TD></TR>
+        <TR>
+          <TH><BIG><CODE>\</CODE></BIG></TH>
+          <TD>quote or special</TD></TR></TBODY></TABLE>
+      <P><SMALL>To present a metacharacter as a data character standing for 
+      itself, precede it with <CODE>\</CODE> (e.g. <CODE>\.</CODE> matches the 
+      full stop character <CODE>.</CODE> only).</SMALL></P>
+      <P><SMALL>In the table above, the characters themselves, in the first 
+      column, are links to descriptions of characters in my <CITE>The ISO Latin 1 character 
+      repertoire&nbsp;- a description with usage notes</CITE>. Note that the 
+      physical appearance (glyph) of a 
+      character may vary from one device or program or font to 
+      another.</SMALL></P></TD>
+    <TD vAlign=top>
+      <H3>Repetition</H3>
+      <TABLE border=1 cellSpacing=0 cellPadding=4>
+        <COLGROUP>
+        <COL style="FONT-SIZE: 120%">
+        <TBODY>
+        <TR>
+          <TD><VAR>a</VAR><CODE>*</CODE></TD>
+          <TD>zero or more <VAR>a</VAR>’s</TD></TR>
+        <TR>
+          <TD><VAR>a</VAR><CODE>+</CODE></TD>
+          <TD>one or more <VAR>a</VAR>’s</TD></TR>
+        <TR>
+          <TD><VAR>a</VAR><CODE>?</CODE></TD>
+          <TD>zero or one <VAR>a</VAR>’s (i.e., optional <VAR>a</VAR>)</TD></TR>
+        <TR>
+          <TD><VAR>a</VAR><CODE>{</CODE><VAR>m</VAR><CODE>}</CODE></TD>
+          <TD>exactly <VAR>m</VAR> <VAR>a</VAR>’s</TD></TR>
+        <TR>
+          <TD><VAR>a</VAR><CODE>{</CODE><VAR>m</VAR><CODE>,}</CODE></TD>
+          <TD>at least <VAR>m</VAR> <VAR>a</VAR>’s</TD></TR>
+        <TR>
+          <TD><VAR>a</VAR><CODE>{</CODE><VAR>m</VAR><CODE>,</CODE><VAR>n</VAR><CODE>}</CODE></TD>
+          <TD>at least <VAR>m</VAR> but at most <VAR>n 
+        </VAR><VAR>a</VAR>’s</TD></TR>
+        <TR>
+          <TD><VAR>repetition</VAR><CODE>?</CODE></TD>
+          <TD>same as <VAR>repetition</VAR> but the <EM>shortest</EM> match is 
+            taken</TD></TR></TBODY></TABLE>
+      <P><SMALL>Read the notation <VAR>a</VAR>’s as “occurrences of strings, 
+      each of which matches the pattern <VAR>a</VAR>”. Read 
+      <VAR>repetition</VAR> as any of the repetition expressions listed above 
+      it. Shortest match means that the shortest string matching the pattern is 
+      taken. The default is “greedy 
+      matching”, which finds the longest match. The 
+      <VAR>repetition</VAR><CODE>?</CODE> construct was introduced in Perl 
+      version&nbsp;5.</SMALL></P></TD></TR></TBODY></TABLE>
+<H3><A name=esc>Special notations with <CODE>\</CODE></A></H3>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=1 cellSpacing=0 cellPadding=4>
+        <CAPTION>Single characters</CAPTION>
+        <TBODY>
+        <TR>
+          <TD><CODE>\t</CODE></TD>
+          <TD>tab</TD></TR>
+        <TR>
+          <TD><CODE>\n</CODE></TD>
+          <TD>newline</TD></TR>
+        <TR>
+          <TD><CODE>\r</CODE></TD>
+          <TD>return (CR)</TD></TR>
+        <TR>
+          <TD><CODE>\x</CODE><VAR>hh</VAR></TD>
+          <TD>character with hex. code <VAR>hh</VAR></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=top>
+      <TABLE border=1 cellSpacing=0 cellPadding=4>
+        <CAPTION>“Zero-width assertions”</CAPTION>
+        <TBODY>
+        <TR>
+          <TD><CODE>\b</CODE></TD>
+          <TD>“word” boundary</TD></TR>
+        <TR>
+          <TD><CODE>\B</CODE></TD>
+          <TD>not a “word” boundary</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border=1 cellSpacing=0 cellPadding=4>
+  <CAPTION>Matching</CAPTION>
+  <TBODY>
+  <TR>
+    <TD><CODE>\w</CODE></TD>
+    <TD>matches any <EM>single</EM> character classified as a “word” character 
+      (alphanumeric or “<CODE>_</CODE>”)</TD></TR>
+  <TR>
+    <TD><CODE>\W</CODE></TD>
+    <TD>matches any non-“word” character</TD></TR>
+  <TR>
+    <TD><CODE>\s</CODE></TD>
+    <TD>matches any whitespace character (space, tab, newline)</TD></TR>
+  <TR>
+    <TD><CODE>\S</CODE></TD>
+    <TD>matches any non-whitespace character </TD></TR>
+  <TR>
+    <TD><CODE>\d</CODE></TD>
+    <TD>matches any digit character, equiv. to <CODE>[0-9]</CODE></TD></TR>
+  <TR>
+    <TD><CODE>\D</CODE></TD>
+    <TD>matches any non-digit character</TD></TR></TBODY></TABLE>
+<H3><A name=sets>Character sets: specialities inside 
+<CODE>[</CODE>...<CODE>]</CODE></A></H3>
+<P><STRONG class=warning>Different meanings</STRONG> apply inside a character 
+set (“character class”) denoted by <CODE>[</CODE>...<CODE>]</CODE> so that, 
+<STRONG>instead of</STRONG> the normal rules given here, the following 
+apply:</P>
+<TABLE border=1 cellSpacing=0 cellPadding=4>
+  <TBODY>
+  <TR>
+    <TD><CODE>[</CODE><VAR>characters</VAR><CODE>]</CODE></TD>
+    <TD>matches any of the characters in the sequence 
+  <TR>
+    <TD><CODE>[</CODE><VAR>x</VAR><CODE>-</CODE><VAR>y</VAR><CODE>]</CODE></TD>
+    <TD>matches any of the characters from <VAR>x</VAR> to <VAR>y</VAR> 
+      (inclusively) in the ASCII code 
+  <TR>
+    <TD><CODE>[\-]</CODE></TD>
+    <TD>matches the hyphen character&nbsp;“<CODE>-</CODE>”</TD></TR>
+  <TR>
+    <TD>[<CODE>\n</CODE>]
+    <TD>matches the newline; other <A 
+      href="#esc">single 
+      character denotations with&nbsp;<CODE>\</CODE></A> apply normally, too 
+  <TR>
+    <TD><CODE>[^</CODE><VAR>something</VAR><CODE>]</CODE></TD>
+    <TD>matches any character <EM>except</EM> those that 
+      <CODE>[</CODE><VAR>something</VAR><CODE>]</CODE> denotes; that is, 
+      immediately after the leading “<CODE>[</CODE>”, the circumflex 
+      “<CODE>^</CODE>” means “not” applied to all of the rest </TR></TBODY></TABLE>
+<H3><A name=ex>Examples</A></H3>
+<TABLE border=1 cellSpacing=0 cellPadding=4>
+  <TBODY>
+  <TR align=left>
+    <TH>expression</TH>
+    <TH>matches...</TH>
+  <TR>
+    <TD><CODE>abc</CODE></TD>
+    <TD><CODE>abc</CODE> (that exact character sequence, but anywhere in the 
+      string) </TD></TR>
+  <TR>
+    <TD><CODE>^abc</CODE></TD>
+    <TD><CODE>abc</CODE> at the <EM>beginning</EM> of the string </TD></TR>
+  <TR>
+    <TD><CODE>abc$</CODE></TD>
+    <TD><CODE>abc</CODE> at the <EM>end</EM> of the string </TD></TR>
+  <TR>
+    <TD><CODE>a|b</CODE></TD>
+    <TD>either of <CODE>a</CODE> and <CODE>b</CODE> </TD></TR>
+  <TR>
+    <TD><CODE>^abc|abc$</CODE></TD>
+    <TD>the string <CODE>abc</CODE> at the beginning or at the end of the 
+      string </TD></TR>
+  <TR>
+    <TD><CODE>ab{2,4}c</CODE></TD>
+    <TD>an <CODE>a</CODE> followed by two, three or four <CODE>b</CODE>’s 
+      followed by a <CODE>c</CODE> 
+  <TR>
+    <TD><CODE>ab{2,}c</CODE></TD>
+    <TD>an <CODE>a</CODE> followed by at least two <CODE>b</CODE>’s followed 
+      by a <CODE>c</CODE> </TD></TR>
+  <TR>
+    <TD><CODE>ab*c</CODE></TD>
+    <TD>an <CODE>a</CODE> followed by any number (zero or more) of 
+      <CODE>b</CODE>’s followed by a <CODE>c</CODE> 
+  <TR>
+    <TD><CODE>ab+c</CODE></TD>
+    <TD>an <CODE>a</CODE> followed by one or more <CODE>b</CODE>’s followed by 
+      a <CODE>c</CODE> </TD></TR>
+  <TR>
+    <TD><CODE>ab?c</CODE></TD>
+    <TD>an <CODE>a</CODE> followed by an optional <CODE>b</CODE> followed by a 
+      <CODE>c</CODE>; that is, either <CODE>abc</CODE> or <CODE>ac</CODE> </TD></TR>
+  <TR>
+    <TD><CODE>a.c</CODE></TD>
+    <TD>an <CODE>a</CODE> followed by any single character (not newline) 
+      followed by a <CODE>c</CODE> 
+  <TR>
+    <TD><CODE>a\.c</CODE></TD>
+    <TD><CODE>a.c</CODE> exactly 
+  <TR>
+    <TD><CODE>[abc]</CODE></TD>
+    <TD>any one of <CODE>a</CODE>, <CODE>b</CODE> and <CODE>c</CODE> </TD></TR>
+  <TR>
+    <TD><CODE>[Aa]bc</CODE></TD>
+    <TD>either of <CODE>Abc</CODE> and <CODE>abc</CODE></TD></TR>
+  <TR>
+    <TD><CODE>[abc]+</CODE></TD>
+    <TD>any (nonempty) string of <CODE>a</CODE>’s, <CODE>b</CODE>’s and 
+      <CODE>c’s</CODE> (such as <CODE>a</CODE>, <CODE>abba</CODE>, 
+      <CODE>acbabcacaa</CODE>)</TD></TR>
+  <TR>
+    <TD><CODE>[^abc]+</CODE></TD>
+    <TD>any (nonempty) string which does <EM>not</EM> contain any of 
+      <CODE>a</CODE>, <CODE>b</CODE> and <CODE>c</CODE> (such as 
+      <CODE>defg</CODE>)</TD></TR>
+  <TR>
+    <TD><CODE>\d\d</CODE></TD>
+    <TD>any two decimal digits, such as <CODE>42</CODE>; same as \d{2}</TD></TR>
+  <TR>
+    <TD><CODE>\w+</CODE></TD>
+    <TD>a “word”: a nonempty sequence of alphanumeric characters and low lines 
+      (underscores), such as <CODE>foo</CODE> and <CODE>12bar8</CODE> and 
+      <CODE>foo_1</CODE> </TD></TR>
+  <TR>
+    <TD><CODE>100\s*mk</CODE></TD>
+    <TD>the strings <CODE>100</CODE> and <CODE>mk</CODE> optionally separated 
+      by any amount of white space (spaces, tabs, newlines)</TD></TR>
+  <TR>
+    <TD><CODE>abc\b</CODE></TD>
+    <TD><CODE>abc</CODE> when followed by a word boundary (e.g. in 
+      <CODE>abc!</CODE> but not in <CODE>abcd</CODE>)</TD></TR>
+  <TR>
+    <TD><CODE>perl\B</CODE></TD>
+    <TD><CODE>perl</CODE> when <EM>not</EM> followed by a word boundary (e.g. 
+      in <CODE>perlert</CODE> but not in <CODE>perl 
+stuff</CODE>)</TD></TR></TBODY></TABLE>
+
+<br />
+<HR title="Information about this document">
+
+<DIV class=footer>
+<P>Date of creation: 
+2000-01-28. Last revision: 2007-04-16. Last modification: 2007-05-28. </P>
+<P>Finnish translation – <SPAN lang=fi>suomennos: Säännölliset 
+lausekkeet Perlissä</SPAN>.</P>
+<P>The inspiration for my writing this document was <CITE>Appendix&nbsp;: 
+A&nbsp;Summary of Perl Regular Expressions</CITE> in Pankaj Kamthan’s 
+<CITE>CGI Security&nbsp;: 
+Better Safe than Sorry</CITE>, and my own repeated failures to memorize the 
+syntax.</P>
+<DIV>This page belongs to section <CITE>Programming</CITE> of 
+the free information site <CITE>IT and 
+communication</CITE> by <SPAN lang=fi>Jukka</SPAN> 
+“Yucca” <SPAN lang=fi>Korpela</SPAN>. </DIV></DIV>
+        <!------------------------------->
+        <!------------------------------->
+        <br />
+
+        <!-- See Also -->
+        <table width="590" cellpadding="3">
+        <tr><td bgcolor="#0d4283"><font face="Verdana" color="#ffffff" size="3"><b>&nbsp;
+        See also
+        </b></font></td></tr>
+        </table>
+        <font face="Verdana" size="2">
+        <p>
+        <a href="String%20Functions%20Index.htm">String Functions Index</a><br />
+        <a href="..\main.htm">Main Menu</a><br />
+        </p>
+        </font>
+        <br />
+        <br />
+
+        <!-- Page Footer -->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+	        <td align="center"><img src="..\gfx\dbph_foot_1.jpg" width="340" height="38"></td>
+        </tr>
+        </table>
+    </body>
+</html>
+
