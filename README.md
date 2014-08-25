@@ -4,7 +4,7 @@ Created by: Michael Hollister (Admiral MH)
 
 The final public release was version 3.0 
 
-This is a function library provides a more comprehensive command set for string related functions.  This is meant as a supplement to the standard text functions of DBPro and Matrix1 Utility Plug-ins.
+This is a function library provides a more comprehensive command set for string related functions.
 
 [Forum thread](http://forum.thegamecreators.com/?m=forum_view&t=189595&b=5 "Forum thread")
 
@@ -13,7 +13,9 @@ This is a function library provides a more comprehensive command set for string 
 
 
 Put the String Functions.ini file in the Editor/Keywords folder
+
 Put the String Functions.dll file in the Compiler/plugins-user folder
+
 Put the String Functions Help folder in your DarkBASIC Professional help folder
 
 ---
